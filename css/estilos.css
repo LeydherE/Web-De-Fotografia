@@ -1,0 +1,30 @@
+body{
+
+}
+
+#contenido{
+  text-align: center;
+}
+
+#cabecera h1{
+  font-family: 'Dancing Script';
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#imagen-central {
+  background-color: #82c3a6;
+  margin: 0px;
+}
+
+#imagen-central img{
+  width: 70%;
+
+}
+
+#imagenes{
+  background-color: #d5c75f;
+  margin: 0px;
+}
