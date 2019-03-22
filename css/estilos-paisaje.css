@@ -17,18 +17,13 @@ body{
   }
 }
 
-img{
+img {
   box-shadow: 2px 2px 10px #02010a;
   display: block;
-  margin: auto;
+  margin: 30px;
 }
 
-a:visited{
-  text-decoration: none;
-  color: white;
-}
-
-.header{
+.header {
   display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
@@ -43,7 +38,7 @@ a:visited{
 }
 
 .logo{
-  width: 60%;
+  width:60%;
   text-shadow: 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
   font-size: 150%;
@@ -51,7 +46,12 @@ a:visited{
 }
 
 .nav{
-  width: 40%;
+  width:40%;
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
 }
 
 header nav ul{
@@ -63,64 +63,64 @@ header nav ul li {
 	float: right;
   padding: 15px;
   font-size: 90%;
-  width:15%;
+  width: 15%;
 }
 
-.imagen-central {
-  background-color: #82c3a6;
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-central img{
-  width: 87%;
-  height: 20%;
-  margin: 30px;
-}
-
-.imagenes{
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row wrap;
-  flex-direction: -webkit-row wrap;
-  background-color: #d5c75f;
-  justify-content: center;
-}
-
-figure {
+.galeria1 {
     display: flex;
-    flex-flow: column;
-    margin: 15px;
+    flex-direction: row wrap;
+    background-color: #d5c75f;
     justify-content: center;
-    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-figcaption{
-  font-size: 150%;
-  text-decoration: underline;
-}
-
-.imagenes img{
+.galeria1 img{
   width: 80%;
-  display: block;
-  margin: auto;
 }
 
-#paisaje:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 10px #82c3a6;
+.galeria2 {
+    display: flex;
+    flex-direction: row wrap;
+    background-color: #d5c75f;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-#retrato:hover{
-  transform: translate(20px, -5px);
-  box-shadow: 2px 2px 10px #82c3a6;
+.galeria2 img{
+  width: 80%;
+}
+
+.img1{
+  filter: blur(10px);
+ }
+
+.img2{
+  filter: grayscale(100%);
+ }
+
+.img3{
+  filter: sepia(90%);
+}
+
+.img4{
+  filter: grayscale(100%);
+}
+
+.img5{
+
+}
+
+.img6{
+  filter: grayscale(100%);
 }
 
 footer {
-  background-color: #C6d5c5;
-  display: flex;
-  flex-direction: row;
-  border-radius: 0px 0px 10px 10px;
+    background-color: #C6d5c5;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 10px 10px;
 }
 
 footer p{
@@ -128,22 +128,19 @@ footer p{
 }
 
 .info, .terminos, .redes, .derechos {
-  width: 25%;
-  font-size: 100%;
-  text-align: left;
-  padding: 10px;
-  justify-content: center;
+    width: 25%;
+    font-size: 100%;
+    text-align: left;
+    padding: 10px;
+    justify-content: center;
 }
 
 @media (max-width: 900px){
 
   body{
-    margin: 1%;
-  }
-
-  .contenido{
-    margin: 0px;
-  }
+    margin: 5px;
+    align-items: center;
+    }
 
   .header{
     display: flex;
@@ -167,7 +164,7 @@ footer p{
 
   .logo p{
     text-align: center;
-    }
+  }
 
   .nav{
     width: 100%;
@@ -175,25 +172,15 @@ footer p{
     align-items: center;
     }
 
-  .imagen-central img{
-    width: 80%;
-  }
-
-  .imagenes {
+  .galeria1{
     display: flex;
-    display: -webkit-flex;
-    flex-flow: column;
-    flex-flow: -webkit-column;
-    align-items: center;
-    padding: 17px;
-  }
-  .imagenes img{
-    width: 92%;
-  }
+    flex-direction: column;
+    }
 
-  figcaption{
-    font-size: 200%;
-  }
+  .galeria2{
+    display: flex;
+    flex-direction: column;
+    }
 
   footer{
     justify-content: center;

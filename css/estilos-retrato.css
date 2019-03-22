@@ -1,5 +1,207 @@
-.galeria {
-  background-color: #82c3a6;
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@-webkit-keyframes slidein{
+  0% {
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+img {
+  box-shadow: 2px 2px 10px #02010a;
+  display: block;
+  margin: 30px;
+}
+
+a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.header {
   display: flex;
-  justify-content: center;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  flex-flow: -webkit-row wrap;
+  font-family: 'Dancing Script';
+  background-color: #5b7989;
+  color: white;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+}
+
+.logo{
+  width: 60%;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 150%;
+  text-indent: 0.25cm;
+}
+
+.nav{
+  width: 40%;
+}
+
+header nav ul{
+  list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: right;
+  padding: 15px;
+  font-size: 90%;
+  width:15%;
+}
+
+.galeria1 {
+    display: flex;
+    flex-direction: row wrap;
+    background-color: #d5c75f;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.galeria1 img{
+  width: 80%;
+}
+
+.galeria2 {
+    display: flex;
+    flex-direction: row wrap;
+    background-color: #d5c75f;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.galeria2 img{
+  width: 80%;
+}
+
+.img1{
+  filter: blur(10px);
+ }
+
+.img2{
+  filter: grayscale(100%);
+ }
+
+.img3{
+  filter: sepia(90%);
+}
+
+.img4{
+  filter: grayscale(100%);
+}
+
+.img5{
+
+}
+
+.img6{
+  filter: grayscale(100%);
+}
+
+footer {
+    background-color: #C6d5c5;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer p{
+  font-size: 130%;
+}
+
+.info, .terminos, .redes, .derechos {
+    width: 25%;
+    font-size: 100%;
+    text-align: left;
+    padding: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+
+  body{
+    margin: 5px;
+    align-items: center;
+    }
+
+  .header{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-direction: -webkit-column;
+    justify-content: center;
+    font-size: 200%;
+    }
+
+  header nav ul li {
+    padding: 10px;
+    width: 25%;
+    }
+
+  .logo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .logo p{
+    text-align: center;
+  }
+
+  .nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .galeria1{
+    display: flex;
+    flex-direction: column;
+    }
+
+  .galeria2{
+    display: flex;
+    flex-direction: column;
+    }
+
+  footer{
+    justify-content: center;
+    font-size: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-direction: -webkit-column;
+    justify-content: space-between;
+    }
+
+  footer p{
+    font-size: 150%;
+    }
+
+  .info, .terminos, .redes, .derechos {
+    width: 100%;
+    font-size: 1.3em;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    }
 }
