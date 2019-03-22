@@ -108,11 +108,13 @@ figcaption{
 
 #paisaje:hover{
   transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
   box-shadow: 2px 2px 10px #82c3a6;
 }
 
 #retrato:hover{
   transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
   box-shadow: 2px 2px 10px #82c3a6;
 }
 
